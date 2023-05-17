@@ -1,4 +1,4 @@
-const Recommendations = require("./../models/Recommendations");
+const Recommendations = require("./../models/recommendations");
 const Users = require("./../models/user");
 const Movies = require("./../models/movie");
 
