@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("./../db");
 const Followers = require("./followers");
-const Recommendations = require("./Recommendations");
+const Recommendations = require("./recommendations");
 const Playlists = require("./playlists");
 
 const Users = sequelize.define(

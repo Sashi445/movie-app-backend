@@ -1,6 +1,6 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../db");
-const Recommendations = require("./Recommendations");
+const Recommendations = require('./recommendations');
 
 const Movies = sequelize.define("movies", {
   id: {
