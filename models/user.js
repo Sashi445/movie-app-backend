@@ -29,11 +29,15 @@ const Users = sequelize.define(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    password: {
+    platform: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "user_password#123",
+      defaultValue: "GOOGLE",
     },
+    fuid: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   },
   {
     createdAt: "joinedAt",
