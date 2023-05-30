@@ -7,19 +7,25 @@ dotenv.config();
 
 const app = express();
 
-if (process.env.ENV === "development") {
-  app.use(
-    cors({
-      origin: "*",
-    })
-  );
-} else {
-  app.use(
-    cors({
-      origin: ["https://reelsavvy.vercel.app/"],
-    })
-  );
-}
+// if (process.env.ENV === "development") {
+//   app.use(
+//     cors({
+//       origin: "*",
+//     })
+//   );
+// } else {
+//   app.use(
+//     cors({
+//       origin: "*",
+//     })
+//   );
+// }
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 connectToDB();
 
