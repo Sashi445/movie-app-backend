@@ -21,11 +21,10 @@ const signUpforEarlyAccess = async (req, res) => {
       });
     }
 
-    return res.json({
+    return res.status(400).json({
       message: "SUCCESS",
-      info: "Already subscribed for early access"
-    })
-
+      info: "Already subscribed for early access",
+    });
   } catch (error) {
     console.log(error.message);
     return res.status(500).send(error.message);
