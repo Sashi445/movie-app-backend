@@ -13,6 +13,12 @@ if (process.env.ENV === "development") {
       origin: "*",
     })
   );
+} else {
+  app.use(
+    cors({
+      origin: ["https://reelsavvy.vercel.app/"],
+    })
+  );
 }
 
 connectToDB();
