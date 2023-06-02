@@ -5,21 +5,9 @@ const { connectToDB } = require("./db");
 
 dotenv.config();
 
-const app = express();
+// console.log(process.env);
 
-// if (process.env.ENV === "development") {
-//   app.use(
-//     cors({
-//       origin: "*",
-//     })
-//   );
-// } else {
-//   app.use(
-//     cors({
-//       origin: "*",
-//     })
-//   );
-// }
+const app = express();
 
 app.use(
   cors({
